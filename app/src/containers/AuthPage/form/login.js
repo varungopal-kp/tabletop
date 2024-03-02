@@ -15,14 +15,14 @@ export default function Login(props) {
 
   const handleSubmit = (values, { resetForm }) => {
     try {
-      console.log(values);
+      
       props.handleLogin(values);
       resetForm();
     } catch (error) {
       console.error(error);
     }
   };
-  console.log(props);
+  
   return (
     <Box
       sx={{

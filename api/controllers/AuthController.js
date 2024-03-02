@@ -49,7 +49,7 @@ module.exports.register = async (req, res) => {
       await newUser.save();
       return sendResponse(res, 200);
     } else {
-      return sendResponse(res, 400, null, "User exist");
+      return sendResponse(res, 400, null, "User already exist");
     }
   } catch (error) {
     console.error(error);

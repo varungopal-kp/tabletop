@@ -11,7 +11,7 @@ export default function Index(props) {
   const page = props.page;
   const handleSubmit = (values, { resetForm }) => {
     try {
-      console.log(values);
+      
       if (values._id) {
         props.dispatch(editPlayers(values));
       } else {
@@ -45,7 +45,7 @@ export default function Index(props) {
               disabled={page === "View"}
               error={errors.firstName && touched.firstName ? true : false}
             />
-            {console.log(errors)}
+           
             <Field
               as={TextField}
               label="Last Name"

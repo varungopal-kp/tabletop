@@ -16,7 +16,7 @@ export default function Register(props) {
 
   const handleSubmit = (values, { resetForm }) => {
     try {
-      console.log(values);
+      
       props.handleRegister(values);
       resetForm();
     } catch (error) {

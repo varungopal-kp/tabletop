@@ -19,7 +19,7 @@ import {
 
 function* getCall({ payload }) {
   try {
-    console.log(payload);
+    
     const users = yield axios
       .get(`players`, {
         params: payload,
